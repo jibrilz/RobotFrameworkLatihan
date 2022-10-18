@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20221018 11:54:30.664" rpa="false" schemaversion="3">
+<suite id="s1" name="TestingRbCb" source="D:\RobotFramework\TestCases\TestingRbCb.robot">
+<test id="s1-t1" name="TestingRadionCekbox" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221018 11:54:30.976" level="INFO">Opening browser 'chrome' to base url 'https://katalon-demo-cura.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20221018 11:54:30.976" endtime="20221018 11:54:37.218"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221018 11:54:37.218" endtime="20221018 11:54:37.331"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[@id='btn-make-appointment']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221018 11:54:37.332" level="INFO">Clicking link 'xpath://a[@id='btn-make-appointment']'.</msg>
+<status status="PASS" starttime="20221018 11:54:37.331" endtime="20221018 11:54:37.788"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='txt-username']</arg>
+<arg>John Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 11:54:37.789" level="INFO">Typing text 'John Doe' into text field 'xpath://input[@id='txt-username']'.</msg>
+<status status="PASS" starttime="20221018 11:54:37.789" endtime="20221018 11:54:37.904"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='txt-password']</arg>
+<arg>ThisIsNotAPassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 11:54:37.905" level="INFO">Typing text 'ThisIsNotAPassword' into text field 'xpath://input[@id='txt-password']'.</msg>
+<status status="PASS" starttime="20221018 11:54:37.905" endtime="20221018 11:54:38.025"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@id='btn-login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221018 11:54:38.026" level="INFO">Clicking button 'xpath://button[@id='btn-login']'.</msg>
+<status status="PASS" starttime="20221018 11:54:38.025" endtime="20221018 11:54:38.667"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://h2[normalize-space()='Make Appointment']</arg>
+<arg>Make Appointment</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221018 11:54:38.668" level="INFO">Verifying element 'xpath://h2[normalize-space()='Make Appointment']' contains exact text 'Make Appointment'.</msg>
+<status status="PASS" starttime="20221018 11:54:38.668" endtime="20221018 11:54:38.745"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>programs</arg>
+<arg>Medicaid</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20221018 11:54:38.745" level="INFO">Selecting 'Medicaid' from radio button 'programs'.</msg>
+<status status="PASS" starttime="20221018 11:54:38.745" endtime="20221018 11:54:38.815"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>hospital_readmission</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20221018 11:54:38.816" level="INFO">Selecting checkbox 'hospital_readmission'.</msg>
+<status status="PASS" starttime="20221018 11:54:38.816" endtime="20221018 11:54:38.894"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>facility</arg>
+<arg>Hongkong CURA Healthcare Center</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20221018 11:54:38.895" level="INFO">Selecting options from selection list 'facility' by label Hongkong CURA Healthcare Center.</msg>
+<status status="PASS" starttime="20221018 11:54:38.894" endtime="20221018 11:54:38.971"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>facility</arg>
+<arg>Seoul CURA Healthcare Center</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221018 11:54:38.972" level="INFO">Selecting options from selection list 'facility' by value Seoul CURA Healthcare Center.</msg>
+<status status="PASS" starttime="20221018 11:54:38.971" endtime="20221018 11:54:39.035"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 11:54:44.036" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221018 11:54:39.035" endtime="20221018 11:54:44.036"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221018 11:54:44.036" endtime="20221018 11:54:46.278"/>
+</kw>
+<status status="PASS" starttime="20221018 11:54:30.976" endtime="20221018 11:54:46.278"/>
+</test>
+<status status="PASS" starttime="20221018 11:54:30.664" endtime="20221018 11:54:46.278"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestingRbCb">TestingRbCb</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
